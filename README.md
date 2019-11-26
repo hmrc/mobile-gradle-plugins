@@ -1,6 +1,6 @@
 # Mobile Gradle Plugins 🐘
 
-A collection of use Gradle plugins for mobile projects.
+A collection of useful Gradle plugins for mobile projects.
 
 To use these plugins, first add the following to your buildscript repositories:
 
