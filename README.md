@@ -17,6 +17,8 @@ buildscript {
 
 ## Spotless  [![Download](https://api.bintray.com/packages/hmrc/mobile-releases/spotless/images/download.svg) ](https://bintray.com/hmrc/mobile-releases/spotless/_latestVersion)
 
+This plugin applies the [Spotless Gradle plugin](https://github.com/diffplug/spotless/tree/master/plugin-gradle) and configures Kotlin and XML formatting.
+
 ### Applying the plugin
 
 ```
