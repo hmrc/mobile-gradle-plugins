@@ -11,10 +11,11 @@ buildscript {
         }
     }
 }
+```
 
 ## Spotless
 
-### Apply the plugin
+### Applying the plugin
 
 ```
 buildscript {
