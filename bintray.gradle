@@ -1,0 +1,17 @@
+bintray {
+    user = System.getenv("BINTRAY_USER")
+    key = System.getenv("BINTRAY_KEY")
+
+    publish = true
+
+    publications = ["pluginMaven"]
+
+    pkg {
+        repo = "mobile-releases"
+        name = project.name
+        desc = project.description
+        userOrg = "hmrc"
+        vcsUrl = "https://github.com/hmrc/mobile-gradle-plugins"
+        licenses = ["Apache-2.0"]
+    }
+}

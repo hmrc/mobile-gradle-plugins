@@ -1,6 +1,7 @@
 plugins {
     `kotlin-dsl`
     `maven-publish`
+    id("com.jfrog.bintray") version "1.8.4"
 }
 
 repositories {
@@ -12,13 +13,8 @@ dependencies {
 }
 
 group = "uk.gov.hmrc.gradle"
-version = "0.0.4"
+version = "0.0.7"
+description = "Keep your code spotless with Gradle"
 
-gradlePlugin {
-    plugins {
-        create("spotless") {
-            id = "uk.gov.hmrc.spotless"
-            implementationClass = "uk.gov.hmrc.spotless.HmrcSpotlessPlugin"
-        }
-    }
-}
+apply(from = "../publishing.gradle.kts")
+apply(from = "../bintray.gradle")
