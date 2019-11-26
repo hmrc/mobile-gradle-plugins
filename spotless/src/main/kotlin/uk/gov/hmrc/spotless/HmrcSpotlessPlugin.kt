@@ -33,7 +33,6 @@ class HmrcSpotlessPlugin: Plugin<Project> {
 
             format("xml") {
                 target("**/*.xml")
-                target("lint/**")
 
                 replace("No space after end tag", "\"/>", "\" />")
                 replace("No newline before license", "?><!--", "?>\n<!--")
