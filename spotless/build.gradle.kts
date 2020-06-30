@@ -13,7 +13,7 @@ dependencies {
 }
 
 group = "uk.gov.hmrc.gradle"
-version = "0.1.1"
+version = "0.1.2"
 description = "Keep your code spotless with Gradle"
 
 apply(from = "../publishing.gradle.kts")
