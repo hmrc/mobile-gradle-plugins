@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="hmrc-gradle.main" target="1.8" />
       <module name="hmrc-gradle.test" target="1.8" />
+      <module name="spotless.main" target="1.8" />
+      <module name="spotless.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
