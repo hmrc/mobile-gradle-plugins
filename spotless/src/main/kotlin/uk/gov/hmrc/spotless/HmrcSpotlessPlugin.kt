@@ -36,7 +36,6 @@ class HmrcSpotlessPlugin: Plugin<Project> {
 
                 replace("No space after end tag", "\"/>", "\" />")
                 replace("No newline before license", "?><!--", "?>\n<!--")
-                replaceRegex("No empty line after end tag", ">\n( *)</", ">\n\n$1</")
             }
         }
     }
