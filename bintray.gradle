@@ -10,7 +10,7 @@ bintray {
         repo = "mobile-releases"
         name = project.name
         desc = project.description
-        userOrg = "hmrc"
+        userOrg = "hmrc-mobile"
         vcsUrl = "https://github.com/hmrc/mobile-gradle-plugins"
         licenses = ["Apache-2.0"]
     }

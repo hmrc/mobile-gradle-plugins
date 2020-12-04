@@ -9,7 +9,7 @@ buildscript {
     repositories {
         ...
         maven {
-            url "https://hmrc.bintray.com/mobile-releases"
+            url "https://dl.bintray.com/hmrc-mobile/mobile-releases"
         }
     }
 }
