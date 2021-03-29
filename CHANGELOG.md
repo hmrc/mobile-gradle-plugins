@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.1.0] - 2021-03-29
 - Changed to Github Packages for artefact hosting
 
 ## [1.0.3] - 2020-12-07
