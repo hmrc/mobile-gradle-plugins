@@ -2,20 +2,24 @@
 
 A collection of useful Gradle plugins for mobile projects.
 
-To use these plugins, first add the following to your buildscript repositories:
+To use these plugins, first add the following to your buildscript repositories, along with a Github username and access token (no permissions required):
 
 ```
 buildscript {
     repositories {
         ...
         maven {
-            url "https://dl.bintray.com/hmrc-mobile/mobile-releases"
+            url "https://maven.pkg.github.com/hmrc/mobile-gradle-plugins"
+            credentials {
+                username = System.getenv("GITHUB_USER_NAME")
+                password = System.getenv("GITHUB_TOKEN")
+            }
         }
     }
 }
 ```
 
-## Spotless  [![Download](https://api.bintray.com/packages/hmrc/mobile-releases/spotless/images/download.svg) ](https://bintray.com/hmrc/mobile-releases/spotless/_latestVersion)
+## Spotless  [![Github](https://img.shields.io/github/release/hmrc/mobile-gradle-plugins.svg)](https://gitHub.com/hmrc/mobile-gradle-plugins/releases/)
 
 This plugin applies the [Spotless Gradle plugin](https://github.com/diffplug/spotless/tree/master/plugin-gradle) and configures Kotlin and XML formatting.
 
