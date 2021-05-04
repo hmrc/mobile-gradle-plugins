@@ -79,5 +79,8 @@ platform :android do
       tag_name: tag.to_string,
       description: changelog
     )
+
+    # start release process on CI
+    sh("cd .. && sh release.sh '#{tag.to_string}'")
   end
 end
