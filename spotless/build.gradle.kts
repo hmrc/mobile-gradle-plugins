@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.diffplug.spotless:spotless-plugin-gradle:3.26.0")
+    implementation("com.diffplug.spotless:spotless-plugin-gradle:6.0.0")
 }
 
 group = "uk.gov.hmrc.gradle"
