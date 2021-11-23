@@ -15,16 +15,15 @@
  */
 package uk.gov.hmrc.spotless
 
-import com.diffplug.gradle.spotless.SpotlessPlugin
+import com.diffplug.gradle.spotless.SpotlessExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
 class HmrcSpotlessPlugin: Plugin<Project> {
 
     override fun apply(target: Project) {
-        target.pluginManager.apply("com.diffplug.gradle.spotless")
-
-        target.plugins.findPlugin(SpotlessPlugin::class.java)?.extension?.apply {
+        target.pluginManager.apply("com.diffplug.spotless")
+        target.extensions.getByType(SpotlessExtension::class.java).apply {
             kotlin {
                 target("**/*.kt")
                 ktlint()
