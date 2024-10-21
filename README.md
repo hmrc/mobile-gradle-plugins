@@ -50,4 +50,4 @@ Recommended flow:
 
 You need to:
 * Have a valid Bitrise access token saved in your path under the variable name `BITRISE_TOKEN`. See [Bitrise docs](https://devcenter.bitrise.io/api/authentication).
-* Two environment variables, `GRADLE_PLUGINS_APP_SLUG` & `GRADLE_PLUGINS_RELEASE_WORKFLOW_ID` will also need to be included in your bash/ZSH profile. Speak with [Chris](https://github.com/chrisob55) to obtain these values.
+* Two environment variables, `GRADLE_PLUGINS_APP_SLUG` & `GRADLE_PLUGINS_RELEASE_WORKFLOW_ID` will also need to be included in your bash/ZSH profile. These can be found in Bitwarden.
